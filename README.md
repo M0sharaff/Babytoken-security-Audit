@@ -4,7 +4,7 @@ Here are the slither findings :
 
 
 
-Compilation warnings/errors on ./contracts/BABYTOKEN.sol:
+''' Compilation warnings/errors on ./contracts/BABYTOKEN.sol:
 Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.
     --> ./contracts/BABYTOKEN.sol:2584:1:
      |
@@ -408,7 +408,8 @@ Clones.clone(address) (contracts/BABYTOKEN.sol#831-840) uses literals with too m
 Clones.cloneDeterministic(address,bytes32) (contracts/BABYTOKEN.sol#849-858) uses literals with too many digits:
         - mstore(uint256,uint256)(ptr_cloneDeterministic_asm_0,0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000) (contracts/BABYTOKEN.sol#852)
 Clones.cloneDeterministic(address,bytes32) (contracts/BABYTOKEN.sol#849-858) uses literals with too many digits:
-        - mstore(uint256,uint256)(ptr_cloneDeterministic_asm_0 + 0x28,0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000) (contracts/BABYTOKEN.sol#854)
+        - mstore(uint256,uint256)(ptr_cloneDeterministic_asm_0 + 0x28,0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000)'''
+        (contracts/BABYTOKEN.sol#854)
 Clones.predictDeterministicAddress(address,bytes32,address) (contracts/BABYTOKEN.sol#863-878) uses literals with too many digits:
         - mstore(uint256,uint256)(ptr_predictDeterministicAddress_asm_0,0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000) (contracts/BABYTOKEN.sol#870)
 Clones.predictDeterministicAddress(address,bytes32,address) (contracts/BABYTOKEN.sol#863-878) uses literals with too many digits:
@@ -424,4 +425,4 @@ Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-
 
 BABYTOKEN.rewardToken (contracts/BABYTOKEN.sol#2596) should be immutable 
 Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
-./contracts analyzed (26 contracts with 84 detectors), 109 result(s) found
+./contracts analyzed (26 contracts with 84 detectors), 109 result(s) found'''
